@@ -46,7 +46,7 @@ const ArticleCard = ({ article, path, isExternal }: IProp) => {
           <div className={"rounded-t-[4px] overflow-hidden h-[200px] relative"}>
             <Image
               src={`${urlFor(_ref)}`}
-              alt="" 
+              alt="image" 
               layout="fill"
               quality={70}
               priority={true}
