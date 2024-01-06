@@ -1,7 +1,7 @@
 import React from "react";
 import { ContentsTypeCard, MyInfoCard } from "@/components/index";
 import Image from "next/legacy/image";
-import PalestinFlag from '../../app/free-palestine/images/Palestine.jpg'
+//import PalestinFlag from '../../app/free-palestine/images/Palestine.jpg'
 import Link from "next/link";
 
 
@@ -12,7 +12,7 @@ const HeroSection = () => {
      <section className="w-full md:pt-[100px] md:pb-[70px] pt-[90px] pb-20 mb-10 dark:bg-slate-800 bg-slate-200">
      
           <div className="container px-3">
-         <div  className="flex flex-wrap items-start md:flex-nowrap justify-center">
+          {/*  <div  className="flex flex-wrap items-start md:flex-nowrap justify-center">
          <Link href="/free-palestine">
           <h1 className='mb-5 px-3 text-xl font-bold md:text-3xl text-center cursor-pointer'>
                                 I 
@@ -30,7 +30,7 @@ const HeroSection = () => {
                                     width={40}
                                     objectFit='contain'
                                 />
-</div>
+                              </div>*/}
 
             <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
             

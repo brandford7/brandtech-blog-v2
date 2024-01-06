@@ -6,7 +6,7 @@ import {
   removeBodyNoScroll,
 } from "@/utils/utils";
 import Image from "next/legacy/image";
-import PalestinFlag from '../../app/free-palestine/images/Palestine.jpg'
+//import PalestinFlag from '../../app/free-palestine/images/Palestine.jpg'
 import './Palestinianflag.css'
 // import Search from "../Search";
 import classes from "./Navbar.module.scss";
@@ -41,28 +41,28 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <nav
-        className={combineClasses(
-          classes.navbar,
-          "bg-white  dark:bg-slate-900 dark:text-white text-black"
-        )}
-      >
-        <div
-          className={combineClasses(
-            classes.navbar__container,
-            "container flex items-center justify-between",
-            "px-2"
-          )}
-        >
-          <div className="flex items-center">
-            <Link href="/" className="text-[22px] font-semibold">
-              {LOGO}
-            </Link>
-          </div>
+      <>
+          <nav
+              className={combineClasses(
+                  classes.navbar,
+                  "bg-white  text-black dark:bg-slate-900 dark:text-white"
+              )}
+          >
+              <div
+                  className={combineClasses(
+                      classes.navbar__container,
+                      "container flex items-center justify-between",
+                      "px-2"
+                  )}
+              >
+                  <div className='flex items-center'>
+                      <Link href='/' className='text-[22px] font-semibold'>
+                          {LOGO}
+                      </Link>
+                  </div>
 
-          <div className="flex items-start">
-          <Link href="/free-palestine">
+                  <div className='flex items-start'>
+            {/* <Link href="/free-palestine">
                                 <Image
                                     alt={"palestini-flag"}
                                     loading='lazy'
@@ -71,13 +71,13 @@ const Navbar = () => {
                                     width={30}
                                     objectFit='contain'
                                 />
-</Link>
+                  </Link> */}
 {/* <div class="background">
   <div class="top"></div>
   <div class="middle"></div>
   <div class="triangle"></div>
 </div> */}
-            {/* <div
+                      {/* <div
               className={combineClasses(
                 classes.search_icon_wrapper,
                 "ml-5 dark:text-white"
@@ -89,27 +89,27 @@ const Navbar = () => {
               </button>
             </div> */}
 
-            <button
-              name="theme-switch"
-              aria-label="theme button"
-              className={combineClasses(
-                classes.theme_switch,
-                "pl-3 dark:text-white text-black"
-              )}
-              onClick={changeTheme}
-            >
-              {theme && theme === "dark" ? (
-                <BsFillSunFill className="text-2xl" />
-              ) : (
-                <BsFillMoonFill className="text-md " />
-              )}
-            </button>
-          </div>
-        </div>{" "}
-      </nav>
+                      <button
+                          name='theme-switch'
+                          aria-label='theme button'
+                          className={combineClasses(
+                              classes.theme_switch,
+                              "pl-3 text-black dark:text-white"
+                          )}
+                          onClick={changeTheme}
+                      >
+                          {theme && theme === "dark" ? (
+                              <BsFillSunFill className='text-2xl' />
+                          ) : (
+                              <BsFillMoonFill className='text-md ' />
+                          )}
+                      </button>
+                  </div>
+              </div>{" "}
+          </nav>
 
-      {/* {showSearch && <Search closeSearch={() => setShowSearch(false)} />} */}
-    </>
+          {/* {showSearch && <Search closeSearch={() => setShowSearch(false)} />} */}
+      </>
   );
 };
 

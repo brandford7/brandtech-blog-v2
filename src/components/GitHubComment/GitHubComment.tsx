@@ -10,7 +10,7 @@ export default function GitHubComment() {
         category="Comments"
         categoryId={process.env.NEXT_PUBLIC_GITHUB_COMMENT_CATEGORY_ID}
         mapping="url"
-        term="Welcome to Maham's blog"
+        term="Welcome to Brand Tech blog"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"

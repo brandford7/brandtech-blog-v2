@@ -1,6 +1,8 @@
 import Script from "next/script";
 
+ //const ga_id = process.env.NEXT_PUBLIC_GA_ID;
 const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
+ 
   <>
     <Script
       async
