@@ -16,11 +16,11 @@ const MyInfoCard = () => {
                         quality={100}
                         className='rounded-full'
                         src={ProfilePic}
-                        alt='Syeda Maham Fahim'
+                        alt='Brandford Junior'
                     />
                 </div>
                 <div className='ml-5'>
-                    <h4 className='font-bold'>Syeda Maham Fahim 🇵🇰</h4>
+                    <h4 className='font-bold'>Brandford Junior</h4>
                     <p className='line-clamp-1 text-xl'>💻 ✍ ℡ 🚀⚡️ </p>
                 </div>
                 
